@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51283996220",
+    "firebase_url": "https://waterapple-1c110.firebaseio.com",
+    "project_id": "waterapple-1c110",
+    "storage_bucket": "waterapple-1c110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51283996220:android:bb25a2c8d31e9993",
+        "android_client_info": {
+          "package_name": "com.example.user.waterapple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51283996220-u3m124lk92hknvfok7lfnqcoab7jjnab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.waterapple",
+            "certificate_hash": "2f7bd59ad429185c185f99dcc7298b81de1eaf23"
+          }
+        },
+        {
+          "client_id": "51283996220-4hq8qh73714195b3749dm6bd606qia37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgoEbGy6OEWDT4XsW7G1lQsld-i1BOWnA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51283996220-4hq8qh73714195b3749dm6bd606qia37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
