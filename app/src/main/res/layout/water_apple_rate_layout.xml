@@ -58,13 +58,9 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rate_modify_button"
-                    android:text="修改"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rate_delete_button"
-                    android:text="修改"/>
+                    android:id="@+id/rate_search_button"
+                    android:text="查詢"/>
+
             </LinearLayout>
 
 

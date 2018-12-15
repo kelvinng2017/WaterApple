@@ -33,7 +33,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_weight="1.5"
             android:gravity="center">
 
@@ -43,6 +43,14 @@
                 android:layout_height="wrap_content"
                 android:text="選擇圖片"/>
 
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,6 +58,17 @@
             android:orientation="horizontal"
             android:layout_weight="1.5"
             >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rate_name_text_view"
+                android:text="蓮霧名稱"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rate_name_edit_text"/>
 
         </LinearLayout>
         <LinearLayout

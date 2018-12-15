@@ -19,9 +19,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 1:
                 Industry industry=new Industry();
                 return  industry;
-            case 2:
-                WaterAppleResume resume=new WaterAppleResume();
-                return resume;
+
 
 
             default:
@@ -32,7 +30,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     public CharSequence getPageTitle(int position){
@@ -43,8 +41,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
             case 1:
                 return "業者資訊";
-            case 2:
-                return "履歷查詢";
+
 
 
 

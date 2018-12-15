@@ -1,14 +1,17 @@
 package com.example.user.waterapple;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -97,6 +100,16 @@ public class Rate extends Fragment {
             protected void onBindViewHolder(@NonNull rateViewHolder holder, int position, @NonNull WaterAppleRate model) {
                 holder.setRateImage(model.getImage());
                 holder.setRateName(model.getName());
+                final String rate_id = getRef(position).getKey();
+                holder.rate_search_button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getContext(),Resume.class);
+                        intent.putExtra("rate_id",rate_id);
+                        startActivity(intent);
+                        Log.i("品種總類",rate_id);
+                    }
+                });
             }
 
             @NonNull
@@ -113,11 +126,13 @@ public class Rate extends Fragment {
 
     public static class rateViewHolder extends RecyclerView.ViewHolder{
         View view;
+        Button rate_search_button;
 
         public rateViewHolder(@NonNull View itemView) {
             super(itemView);
 
             view = itemView;
+            rate_search_button=(Button)view.findViewById(R.id.rate_search_button);
         }
 
         public void setRateName(String name){

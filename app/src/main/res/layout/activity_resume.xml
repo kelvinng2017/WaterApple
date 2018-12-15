@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resume">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/resume_app_layout"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/resume_app_layout"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:id="@+id/resume_image"
+               android:src="@drawable/default_avatar"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1.5"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/name"
+               android:text="種類:"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/name_data"
+               android:text="分紅色種"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1.5"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/ancient_name"
+               android:text="俗稱:"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/ancient_name_data"
+               android:text="黑珍珠"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1.5"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/production_period"
+               android:text="產期:"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/production_period_data"
+               android:text="5到12月"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1.5"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/introduction"
+               android:text="簡介:"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/introduction_data"
+               android:text="。。。。"
+               android:textColor="@android:color/black"
+               android:textSize="20sp"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+</RelativeLayout>
